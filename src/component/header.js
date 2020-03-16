@@ -8,9 +8,7 @@ const Header = props => {
         
             </Box>
             <Box flexShrink={0}>
-                <ul>
-                    <li>home</li>
-                </ul>
+                
             </Box>
         </Box>
     );
