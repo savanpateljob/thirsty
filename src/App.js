@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
+import Header from './component/header';
 
 function App() {
   return (
-    <div>
-      Savan
-    </div>
+    <React.Fragment>
+      <Header/>
+    </React.Fragment>
   );
 }
 
