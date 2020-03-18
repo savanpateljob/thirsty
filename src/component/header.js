@@ -5,10 +5,10 @@ const Header = props => {
     return (
         <Box display="flex" alignItems="center">
             <Box flexGrow={1}>
-        
+                Logo
             </Box>
             <Box flexShrink={0}>
-                
+
             </Box>
         </Box>
     );
