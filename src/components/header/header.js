@@ -8,11 +8,11 @@ const Links = styled.section`
   font-weight: bold;
   display: inline-block;
   cursor: pointer;
-  padding: 0 1em;
+  padding: 1em;
   &:hover {
     color: #1976D2;
     transform: translate(15px, -15px) rotate(20deg);
-    padding: 0 1em;
+    display: inline-block;
   }  
 `;
 
