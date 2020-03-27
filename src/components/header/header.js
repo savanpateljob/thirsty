@@ -1,7 +1,20 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
-import Links from "../link/link";
 import Link from '@material-ui/core/Link';
+import styled from 'styled-components'
+
+const Links = styled.section`
+  color:#212121;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 1em;
+  &:hover {
+    color: #1976D2;
+    transform: translate(15px, -15px) rotate(20deg);
+    padding: 0 1em;
+  }  
+`;
 
 const Header = props => {
     return (
@@ -16,10 +29,10 @@ const Header = props => {
                             <path d="M20.6,0.3H0v5.3h7.4v20.8h5.8V5.6h7.4V0.3z" />
                             <path d="M129.2,0.5h-20.6v5.3h7.4v20.8h5.8V5.8h7.4V0.5z" />
                             <path d="M153.1,0.5l-5.4,9.9l-5.3-9.9h-7.1l9.4,14.8v11.3h5.8V15.2L160,0.5H153.1z" />
-                            <path fill="#279ED9" d="M70.5,17c3.3-1.2,5.5-3.8,5.5-7.9V9c0-2.4-0.8-4.4-2.2-5.8c-1.7-1.7-4.2-2.6-7.4-2.6H53.3l3.3,5.1h9.3
+                            <path fill="#1976D2" d="M70.5,17c3.3-1.2,5.5-3.8,5.5-7.9V9c0-2.4-0.8-4.4-2.2-5.8c-1.7-1.7-4.2-2.6-7.4-2.6H53.3l3.3,5.1h9.3
 	c2.7,0,4.4,1.2,4.4,3.6v0.1c0,2.2-0.8,3.6-4.3,3.6l-4.6,0l2,3l0,0l6.7,10.1h6.6L70.5,17z"/>
                             <path d="M41.6,0.5v10.1h-9.4V0.5h-5.6V26h5.6V15.7h9.4V26h5.6V0.5H41.6z" />
-                            <path fill="#279ED9" d="M2.4,36h155.2v20H2.4V36z" />
+                            <path fill="#1976D2" d="M2.4,36h155.2v20H2.4V36z" />
                             <path fill="#FFFFFF" d="M23.3,48.4c0,0.5-0.1,0.9-0.3,1.3c-0.2,0.4-0.5,0.7-0.9,0.9s-0.8,0.4-1.3,0.6c-0.5,0.1-1.1,0.2-1.7,0.2
 	c-0.3,0-0.5,0-0.8,0c-0.3,0-0.5,0-0.8-0.1c-0.3,0-0.5-0.1-0.7-0.1c-0.2,0-0.4-0.1-0.6-0.1v-1.4c0.4,0.2,0.9,0.3,1.4,0.3
 	c0.5,0.1,1.1,0.1,1.7,0.1c0.5,0,0.9,0,1.2-0.1s0.6-0.2,0.8-0.3c0.2-0.1,0.4-0.3,0.5-0.5c0.1-0.2,0.1-0.4,0.1-0.7
@@ -56,16 +69,14 @@ const Header = props => {
                     </Link>
                 </Box>
                 <Box flexShrink={0}>
-                    <Links href="#" label="Home" onClick={() => {
-                        console.info("I'm a button.");
-                    }} />
-                    <Links href="#" label="About Us" />
-                    <Links href="#" label="Services" />
-                    <Links href="#" label="Portfolio" />
-                    <Links href="#" label="Contact As" />
+                    <Links color='primary' underline="none" href="#">Home</Links>
+                    <Links color='primary' underline="none" href="#">About Us</Links>
+                    <Links color='primary' underline="none" href="#">Services</Links>
+                    <Links color='primary' underline="none" href="#">Portfolio</Links>
+                    <Links color='primary' underline="none" href="#">Contact As</Links>
                 </Box>
             </Box>
-        </Box >
+        </Box>
     );
 }
 
