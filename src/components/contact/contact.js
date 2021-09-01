@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { TextField, Button, Grid, Container } from '@material-ui/core';
 const ContactForm = () => {
+  // eslint-disable-next-line
   const [formData, setFormData] = useState({})
 
-  const updateInput = e => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
-  }
+  // const updateInput = e => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value,
+  //   })
+  // }
   const handleSubmit = event => {
     event.preventDefault()
     sendEmail()
