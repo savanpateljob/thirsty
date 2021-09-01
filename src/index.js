@@ -5,6 +5,9 @@ import './index.css';
 import App from './App';
 import Contact from './contact';
 import * as serviceWorker from './serviceWorker';
+import About from './about';
+import Service from './service';
+import PortFolio from './portfolio';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
@@ -13,6 +16,9 @@ ReactDOM.render(
         <Switch>
           <Route exact path="/" component={App} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/service" component={Service} />
+          <Route exact path="/portfolio" component={PortFolio} />
+          <Route exact path="/about" component={About} />
         </Switch>
       </Router>
     </React.StrictMode>,
